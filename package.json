@@ -3,9 +3,9 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "lint": "next lint",
     "pages:build": "pnpm dlx @cloudflare/next-on-pages",
     "preview": "pnpm pages:build && pnpm --package=wrangler dlx wrangler pages dev"
