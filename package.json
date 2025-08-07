@@ -3,9 +3,9 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
     "test": "vitest run",
@@ -40,5 +40,5 @@
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "pnpm@10.9.0"
+  "packageManager": "pnpm@10.14.0"
 }
